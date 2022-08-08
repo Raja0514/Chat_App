@@ -25,7 +25,7 @@ class Register extends React.Component {
       this.state.password !== "")
     ) {
       axios
-        .post("http://localhost:8000/register", this.state)
+        .post("https://rakmoni.herokuapp.com/register", this.state)
 
         .then((res) => {
           this.setState({ name: "", email: "", password: "" });

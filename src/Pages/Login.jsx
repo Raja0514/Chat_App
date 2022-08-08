@@ -28,7 +28,7 @@ const Login = () => {
     console.log(email);
     console.log(password);
     axios
-      .post("http://localhost:8000/login", user)
+      .post("https://rakmoni.herokuapp.com/login", user)
 
       //console.log(user)
 

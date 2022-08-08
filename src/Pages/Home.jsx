@@ -76,7 +76,7 @@ const Home = () => {
         
         <div className="container mt-4 ">
             <div className="row chat-window" id="chat_window_1" >
-                {/* <div className="col-xs-4 col-md-4">
+                <div className="col-xs-4 col-md-4">
                     <p>Active Users</p>
                     <ul>
                         {
@@ -85,7 +85,7 @@ const Home = () => {
                             ))
                         }
                     </ul>
-                </div> */}
+                </div>
                 <div className="col-xs-8 col-md-8">
                     <div className="panel panel-default">
                         <div className="panel-heading top-bar">

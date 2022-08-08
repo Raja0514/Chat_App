@@ -37,7 +37,7 @@ const Home = () => {
             socket.off()
         }
 
-    }, [socketUrl,window.location.search])
+    }, [socketUrl])
 
     useEffect(() => {
         socket.on('message', msg => {

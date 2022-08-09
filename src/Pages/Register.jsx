@@ -17,14 +17,14 @@ class Register extends React.Component {
     this.setState({ [e.target.name]: e.target.value });
   };
 
-  handleSubmit = (e) => {
+  handleSubmit = async(e) => {
     e.preventDefault();
 
     if (
       (this.state.name !== "" && this.state.email !== "",
       this.state.password !== "")
     ) {
-      axios
+      await axios
         .post("https://rakmoni.herokuapp.com/register", this.state)
 
         .then((res) => {
@@ -88,7 +88,7 @@ class Register extends React.Component {
             </div>
           </div>
         </div>
-      </>
+       </>
     );
   }
 }

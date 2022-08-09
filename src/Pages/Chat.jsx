@@ -76,7 +76,7 @@ export default Chat;
 // const Chat = () => {
 //   return (
 //     <>    
-//       <button className="btn btn-primary" onClick={handleClick}>
+//       <button classNameName="btn btn-primary" onClick={handleClick}>
 //         logout
 //       </button>
 //     </>

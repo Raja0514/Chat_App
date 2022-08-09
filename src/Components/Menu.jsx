@@ -21,9 +21,15 @@ const Menu = () => {
           <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <Link className="navbar-brand fw-folder fs-4 mx-4  " to="/">
-               ChatRoom
+               ChatApplication
               </Link>
             </ul>
+            <Link
+              className="btn btn-outline-light ms-2 px-4 rounted pill"
+              to="/chat"
+            >
+              join to chat
+            </Link>
 
             <Link
               className="btn btn-outline-light ms-2 px-1 rounded pill"
@@ -37,6 +43,7 @@ const Menu = () => {
             >
               Register
             </Link>
+            
           </div>
         </div>
       </nav>

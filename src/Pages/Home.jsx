@@ -2,10 +2,13 @@ import React, { useEffect, useState,} from 'react'
 import io from 'socket.io-client'
 import './Home.css'
 import {useNavigate} from 'react-router-dom'
+
 let socket;
 const Home = () => {
 
     const navigate=useNavigate()
+
+    
     const [user, setUser] = useState("");
     const [room, setRoom] = useState("");
     const [users, setUsers] = useState([]);
@@ -70,7 +73,7 @@ const Home = () => {
     const handleClick = () => {
         localStorage.clear();
         //window.location.reload();
-        navigate('/login')
+        navigate('/')
       };
     
 

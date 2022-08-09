@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 
 const Login = () => {
 
-  const Navigate = useNavigate();
+  const navigate=useNavigate();
 
   const [user, setuser] = useState({ email: "", password: "",});
 
@@ -17,7 +17,7 @@ const Login = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async(e) => {
 
     e.preventDefault();
 
@@ -27,7 +27,7 @@ const Login = () => {
 
     console.log(email);
     console.log(password);
-    axios
+    await axios
       .post("https://rakmoni.herokuapp.com/login", user)
 
       //console.log(user)
@@ -36,8 +36,9 @@ const Login = () => {
         //console.log(res);
 
         localStorage.setItem("auth", JSON.stringify(res));
-        Navigate("/");
+        navigate('/chat')
       });
+      
   };
 
   return (

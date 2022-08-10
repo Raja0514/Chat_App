@@ -14,7 +14,7 @@ const Home = () => {
     const [users, setUsers] = useState([]);
     const [message, setMessage] = useState("");
     const [messages, setMessages] = useState([]);
-    const socketUrl = 'https://rakmoni.herokuapp.com'
+    const socketUrl = 'https://rakmoni.herokuapp.com/'
 
     useEffect(() => {
         const search = window.location.search;

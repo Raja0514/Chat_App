@@ -22,11 +22,11 @@ function App() {
         
         </Route>
 
-        <Route path="/register" element={<Register />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/home" element={<Home />}  />
-        <Route path="/chat" element={<Chat />} />
-        <Route path="/" element={<Chat1/>}/>
+        <Route path="/register" element={<Register />} exact />
+        <Route path="/login" element={<Login />} exact/>
+        <Route path="/home" element={<Home />}  exact/>
+        <Route path="/chat" element={<Chat />} exact/>
+        <Route path="/" element={<Chat1/>} exact/>
         
         
       </Routes>

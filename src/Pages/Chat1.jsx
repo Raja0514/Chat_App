@@ -3,12 +3,12 @@ const Chat1 = () => {
   return (
     <>
       <div className="container">
-        <div className="row">
-          <div className="col-md-3"></div>
-          <div className="col-md-6">
+        <div className="row mt-5 py-5">
+          <div className="col-md-4"></div>
+          <div className="col-md-4">
             <img src="chatimage.jpg" alt="err"></img>
           </div>
-          <div className="col-md-3"></div>
+          <div className="col-md-4 "></div>
         </div>
       </div>
     </>

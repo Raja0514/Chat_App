@@ -28,7 +28,7 @@ const Menu = () => {
               className="btn btn-outline-light ms-2 px-4 rounted pill"
               to="/chat"
             >
-              join
+             hhhhhhhhhhhhhhhhhhhhhhh
 
             </Link>
 
